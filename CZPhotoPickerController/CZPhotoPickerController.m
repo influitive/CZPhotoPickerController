@@ -243,7 +243,7 @@ typedef enum {
         [sheet showFromTabBar:self.showFromTabBar];
       }
       else {
-        [sheet showFromRect:self.showFromRect inView:self.showFromViewController.view animated:YES];
+        [sheet showInView:self.showFromViewController.navigationController.view];
       }
     };
 
